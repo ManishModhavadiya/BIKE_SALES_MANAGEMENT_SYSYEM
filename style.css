@@ -1,0 +1,156 @@
+/* =========================================================
+   BUYMYCAR / Bike Booking Site
+   Custom overrides on top of Bootstrap 5
+   (Only visual/CSS rules live here — no logic here)
+   ========================================================= */
+
+body {
+  color: #fff;
+}
+
+/* ---------- Hero / page background variants ---------- */
+.hero-index,
+.hero-bike,
+.hero-3d,
+.hero-wrong,
+.hero-login {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.hero-index   { background-image: url('BIKE/ccar.jpg'); background-color: #000; }
+.hero-bike    { background-image: url('BIKE/ccar.jpg'); }
+.hero-3d      { background-image: url('BIKE/ccar.jpg'); background-attachment: fixed; }
+.hero-wrong   { background-image: url('BIKE/ccar.jpg'); background-attachment: fixed; }
+.hero-login   { background-image: url('BIKE/ccar.jpg'); }
+
+/* ---------- Navbar ---------- */
+.site-navbar .nav-link {
+  color: #000 !important;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.5rem 1rem;
+  transition: transform 0.3s ease;
+}
+.site-navbar .nav-link:hover {
+  transform: scale(1.1);
+  color: #589f85 !important;
+}
+
+/* ---------- Message banner (login/logout msg) ---------- */
+.msg-box {
+  color: #fff;
+}
+
+/* ---------- Brand / logo text ---------- */
+.brand-lag {
+  font-family: 'ubuntu', sans-serif;
+  color: rgba(38, 163, 188, 1);
+  text-shadow: 7px 2px 7px rgba(19, 151, 138, 0.5);
+}
+
+/* ---------- Quote block ---------- */
+.quote-box {
+  transition: transform 0.5s ease;
+}
+.quote-box:hover {
+  transform: scale(1.05);
+  color: rgb(246, 191, 29);
+}
+
+/* ---------- Glass / frosted-glass cards (login, register, add/update/remove) ---------- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: #fff;
+}
+.glass-card .form-control,
+.glass-card .form-select {
+  border-radius: 8px;
+}
+
+/* ---------- Floating back button ---------- */
+.back-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transition: transform 0.2s ease;
+}
+.back-btn:hover {
+  transform: scale(1.1);
+}
+.back-btn img {
+  width: 45px;
+  height: 45px;
+}
+
+/* ---------- Admin quick-action bar ---------- */
+.admin-actions .btn {
+  font-size: 1.1rem;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: #000;
+}
+.site-footer a {
+  color: #6ea8fe;
+}
+.site-footer a:visited {
+  color: #c68cf9;
+}
+
+/* ---------- carsss.php bike listing cards ---------- */
+.bike-card {
+  color: rgb(246, 191, 29);
+}
+.bike-card img {
+  height: 420px;
+  width: 100%;
+  object-fit: cover;
+}
+.bike-card .bike-desc {
+  height: 150px;
+  overflow-y: auto;
+  text-align: justify;
+}
+.bike-card h1, .bike-card .h1 {
+  color: #000;
+}
+
+/* ---------- 3D Fotos slider ---------- */
+.slider-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.slider-card:hover {
+  transform: translateY(-5px);
+}
+.marquee {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  background: #fff;
+}
+.scrollImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ---------- Orders table wrapper ---------- */
+.orders-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  color: #212529;
+}
+.orders-wrapper th, .orders-wrapper td {
+  color: #212529;
+}
